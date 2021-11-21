@@ -11,7 +11,7 @@
   <div class="page">
    <header class="header">
       <div class="logo logo_place_header"></div>
-      <h1 class="header__title">Научиться учиться</h1>
+      <h1 class="header__title" id="main">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению
         вы можете использовать в своей жизни?
       <a href="#" class="link header__link">Узнать</a></p>
@@ -21,7 +21,7 @@
       <div class="header__square-pic"></div>
    </header>
     <main class="content">
-      <section class="description">
+      <section class="description" id="concept">
         <article class="two-columns">
           <h2 class="two-columns_brief">Главные проблемы в обучении</h2>
           <div class="two-columns_main-text">
@@ -82,7 +82,7 @@
         </ul>
       </section>
 
-      <section class="feynman">
+      <section class="feynman" id="teachers">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
         <a href="#" class="link feynman__link">Подробнее</a>
@@ -140,17 +140,35 @@
     </main>
     <footer class="footer">
       <section class="footer__columns">
-        <div class="footer__column footer__column_content_copyright">
+        <div class="footer__column_content_copyright">
           <div class="logo logo_place_footer"></div>
           <div class="footer__author">&copy2021. Надежда Чухонина</div>
         </div>
-        <div class="footer__column footer__column_content_info">
+        <div class="footer__column_content_info">
           <h2 class="footer__column-heading">О Практикуме</h2>
           <div class="footer__column-links">
-            <a href="#" class="footer__column-link">Главная</a>
-            <a href="#" class="footer__column-link">Концепция</a>
-            <a href="#" class="footer__column-link">Наставники</a>
+            <a href="#main" class="footer__column-link">Главная</a>
+            <a href="#concept" class="footer__column-link">Концепция</a>
+            <a href="#teachers" class="footer__column-link">Наставники</a>
           </div>
+        </div>
+        <div class="footer__column_content_social">
+          <h2 class="footer__column-heading">Соцсети</h2>
+          <div class="footer__column-links">
+            <a href="https://www.facebook.com" class="footer__column-link" target="_blank">
+              <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Фейсбук">
+              Facebook
+            </a>
+            <a href="https://vk.com/id184755" class="footer__column-link" target="_blank">
+              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="ВКонтакте">
+              ВКонтакте
+            </a>
+            <a href="https://www.instagram.com/?hl=ru" class="footer__column-link" target="_blank">
+              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Инстаграм">
+              Instagram
+            </a>
+          </div>
+        </div>
 
       </section>
     </footer>
