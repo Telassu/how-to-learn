@@ -321,6 +321,7 @@
 
 .footer__column_content_info {
   position: absolute;
+  top: 0;
   right: 25%;
 }
 
@@ -336,6 +337,8 @@
   min-height: 30px;
   font-weight: normal;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
   display: flex;
   flex-direction: row;
 
@@ -343,6 +346,7 @@
 
 .footer__column_content_social {
   position: absolute;
+  top: 0;
   right: 0;
 }
 
