@@ -1,3 +1,7 @@
+div, p, h1, h2 {
+  border: 1px solid red;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -32,7 +36,7 @@
 
 .header__title {
   width: 730px;
-  min-height: 96px;
+  line-height: 96px;
   margin: 0 0 0 64px;
   align-self: center;
   z-index: 4;
@@ -42,7 +46,7 @@
 
 .header__subtitle {
   width: 388px;
-  min-height: 25px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -81,6 +85,7 @@
 }
 
 .header__link {
+  line-height: 25px;
   font-size: 18px;
 }
 
@@ -91,29 +96,28 @@
 }
 
 .description {
-  margin: 100px 100px 0;
+  margin: 100px auto;
   width: 80%;
   display: flex;
   justify-content: center;
 }
 
 .two-columns {
-  min-height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.two-columns_brief {
+.two-columns__brief {
   width: 175px;
-  min-height: 1.2px;
   margin: 0;
   font-size: 18px;
+  line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
 }
 
-.two-columns_main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   display: flex;
@@ -121,21 +125,23 @@
   justify-content: space-between;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
   margin: 0;
   font-size: 24px;
   font-weight: normal;
-  min-height: 34px;
+  line-height: 34px;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
-.span_accent {
+.two-columns__paragraph:last-child {
+  margin: 0;
+}
+
+
+.two-columns__span_accent {
   font-size: 24px;
   font-weight: bold;
-}
-
-.two-columns_paragraph_span {
-  margin: 30px 0;
 }
 
 .digits {
@@ -147,7 +153,7 @@
 
 .section-title {
   width: 60%;
-  min-height: 1.15px;
+  line-height: 1.15;
   margin: 0 0 20px;
   font-size: 60px;
   font-weight: bold;
@@ -156,7 +162,7 @@
 
 .section-subtitle {
   width: 60%;
-  min-height: 34px;
+  line-height: 34px;
   margin: 0 auto;
   font-size: 24px;
   font-weight: normal;
@@ -182,14 +188,14 @@
 
 .table__heading {
   margin: 0;
-  min-height: 1.15px;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
   margin: 20px 0 0;
-  min-height: 1.2px;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
@@ -206,7 +212,7 @@
 
 .feynman__title {
   width: 648px;
-  min-height: 1.15px;
+  line-height: 1.15;
   margin: 0 auto;
   text-align: center;
   font-size: 120px;
@@ -216,14 +222,14 @@
 
 .feynman__subtitle {
   margin: 70px auto 0;
-  min-height: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
 }
 
 .feynman__link {
-  min-height: 51px;
+  line-height: 51px;
   font-size: 36px;
   position: absolute;
   right: 48px;
@@ -283,6 +289,7 @@
 .footer {
   min-height: 350px;
   padding: 60px 0 40px;
+  box-sizing: border-box;
   display: flex;
   flex-basis: 711px;
   justify-content: center;
@@ -304,10 +311,10 @@
 }
 
 .footer__author {
-  min-height: 25px;
-  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
   font-weight: normal;
-
+  margin: 18px 0;
 }
 
 .logo_place_footer {
@@ -326,7 +333,7 @@
 }
 
 .footer__column-heading {
-  min-height: 30px;
+  line-height: 30px;
   font-weight: bold;
   font-size: 18px;
   margin: 0 0 20px;
@@ -334,7 +341,7 @@
 }
 
 .footer__column-link {
-  min-height: 30px;
+  line-height: 30px;
   font-weight: normal;
   font-size: 18px;
   color: white;
