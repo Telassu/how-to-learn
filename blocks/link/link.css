@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.link::after {
+  content: " →";
+}
+
+.link:hover {
+  text-decoration: underline;
+}
