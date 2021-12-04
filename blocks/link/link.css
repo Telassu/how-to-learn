@@ -10,4 +10,6 @@
 
 .link:hover {
   text-decoration: underline;
+  opacity: .6;
+  transition: opacity 1s;
 }

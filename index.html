@@ -78,17 +78,11 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-          picture-in-picture" allowfullscreen></iframe>
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-          gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="kaufman" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
+          <iframe id="urban" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
-      <section class="oakley">
+      <section class="oakley" id="teachers">
         <article class="two-columns">
           <h2 class="two-columns__brief">История Барбары Оакли.</h2>
           <div class="two-columns__main-text">
@@ -102,7 +96,7 @@
           </div>
         </article>
       </section>
-      <section class="feynman" id="teachers">
+      <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="link feynman__link">Подробнее</a>
@@ -215,12 +209,20 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone">
-          <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Арзамас">
-          <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Н плюс один">
-          <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Стрелка">
-          <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Полка">
-        </div>
+        <ul class="resources__logo-zone">
+          <li><a href="https://arzamas.academy/" target="_blank">
+              <img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Арзамас"></a>
+          </li>
+          <li><a href="https://nplus1.ru/" target="_blank">
+            <img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Н плюс один"></a>
+          </li>
+          <li><a href="https://strelka.com/ru" target="_blank">
+            <img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Стрелка"></a>
+          </li>
+          <li><a href="https://polka.academy/" target="_blank">
+            <img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Полка"></a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
